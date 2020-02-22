@@ -7,9 +7,9 @@ function Counter(props) {
     <div>
       ID <strong>{props.id}</strong>
       Counter name <strong>{props.name}</strong>
-      Counter value <strong>{props.count}</strong>
+        Counter value <strong>{props.count}</strong>
 
-      <button onClick={() => props.decrement(props.id)}>-</button>
+        <button onClick={() => props.decrement(props.id)}>-</button>
       <button onClick={() => props.increment(props.id)}>+</button>
       <button onClick={() => props.remove(props.id)}>Delete</button>
 

@@ -16,9 +16,11 @@ function AddCounterForm(props) {
     <div>
 
       <input type="text" name='name' value={name}
+             className='form-control'
              onChange={e => setName(e.target.value)} />
 
       <input type="number" name='count' value={count}
+             className='form-control'
              onChange={e => setCount(e.target.value)} />
 
 

@@ -57,13 +57,12 @@ function App() {
       <h1>Counters</h1>
 
       Total {counters.reduce((acc, cur) => acc + cur.count, 0)}
-      <button onClick={resetTotalCount} className='btn btn-danger'>Reset total count</button>
+      <button onClick={resetTotalCount} className='btn btn-danger' >Reset total count</button>
 
       <hr />
 
       {
-        counters.map(el => <Counter key={el.id}
-                                    id={el.id}
+        counters.map(el => <Counter id={el.id}
                                     name={el.name}
                                     count={el.count}
                                     increment={incrementCounter}
@@ -77,7 +76,8 @@ function App() {
 
       <AddCounterForm onSubmit={addCounter} />
 
-    </div>
+
+      </div>
   );
 }
 
